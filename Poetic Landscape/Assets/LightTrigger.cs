@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class LightTrigger : MonoBehaviour {
@@ -18,9 +18,12 @@ public class LightTrigger : MonoBehaviour {
 	void OnTriggerEnter() {
 		//get the light component on this game object, turn it off
 		gameObject.GetComponent<Light> ().enabled = false; 
+
 	}
 	void OnTriggerExit(){
 		//get the light component on this game object, turn it on
 		gameObject.GetComponent<Light> ().enabled = true; 
 	}
-}
+	void OnTriggerEnter(){
+		gameObject
+	}
